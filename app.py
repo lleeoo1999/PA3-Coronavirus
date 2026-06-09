@@ -55,7 +55,25 @@ df = load_data()
 
 st.title("📚 Metodos de deteccion de coronavirus")
 
+# --------------------------------------------------
+# INTRODUCCIÓN Y CONTEXTO EN BASE A JAMA
+# --------------------------------------------------
 
+st.markdown("""
+### Introducción al SARS-CoV-2
+El virus **SARS-CoV-2** (Severe Acute Respiratory Syndrome Coronavirus 2) es el agente patógeno responsable de la enfermedad por coronavirus 2019 (COVID-19). Identificado por primera vez a finales de 2019, este virus de ARN monocatenario pertenece a la familia *Coronaviridae*. Su rápida propagación global e impacto clínico impulsaron una movilización científica sin precedentes para el desarrollo de métodos de diagnóstico rápidos, precisos y escalables, tales como las pruebas de amplificación de ácidos nucleicos (RT-PCR) y los ensayos de antígenos, elementos clave para la contención y vigilancia epidemiológica.
+""")
+
+# URL base limpia de JAMA para evitar problemas de expiración de tokens (Key-Pair-Id)
+url_imagen_jama = "https://cdn.jamanetwork.com/ama/content_public/journal/jama/938540/jrv200009f1_1597950376.70103.png"
+
+st.image(
+    url_imagen_jama, 
+    caption="Evolución de casos registrados de COVID-19 y eventos clave (Fuente: JAMA Network)",
+    use_container_width=True
+)
+
+st.divider()
 
 # --------------------------------------------------
 # LIMPIEZA Y FILTRADO INICIAL
