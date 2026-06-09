@@ -89,6 +89,10 @@ df = df[df["Year"] >= 2019]
 # FILTROS
 # --------------------------------------------------
 
+# --------------------------------------------------
+# FILTROS Y PANEL INFORMATIVO (SIDEBAR)
+# --------------------------------------------------
+
 st.sidebar.title("🔎 Filtros")
 
 # Al haber filtrado el df, min_year será como mínimo 2019
@@ -157,6 +161,27 @@ if autor_seleccionado != "Todos":
         )
     ]
 
+# --------------------------------------------------
+# INFORMACIÓN RELEVANTE (JAMA) - AGREGADO EN SIDEBAR
+# --------------------------------------------------
+
+st.sidebar.markdown("---")  # Línea divisoria decorativa
+st.sidebar.markdown("### 📋 Datos de Interés (JAMA)")
+st.sidebar.markdown("""
+*Según la Fisiopatología, transmisión, diagnóstico y tratamiento de la enfermedad por coronavirus 2019 (COVID-19):*
+
+* 🗣️ **Transmisión:** La infección puede transmitirse por portadores asintomáticos, presintomáticos y sintomáticos.
+* ⏳ **Período de Incubación:** El tiempo promedio desde la exposición hasta la aparición de los síntomas es de **5 días**.
+* 🤒 **Síntomas Comunes:** Se caracterizan principalmente por fiebre, tos seca y dificultad para respirar.
+* 📊 **Letalidad:** La tasa varía notablemente según la edad en EE. UU., oscilando entre:
+  * 🟢 **0.3 muertes** por cada 1,000 casos (pacientes de 5 a 17 años).
+  * 🔴 **304.9 muertes** por cada 1,000 casos (pacientes de 85 años o más).
+
+---
+### 📌 Conclusiones
+* 🌍 Al **1 de julio de 2020**, más de **10 millones de personas** en todo el mundo se habían infectado con el SARS-CoV-2.
+* 🚀 Los avances científicos y de investigación siguen progresando continuamente.
+""")
 
 # =========================
 # KPIs
