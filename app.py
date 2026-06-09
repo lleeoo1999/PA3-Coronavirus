@@ -44,10 +44,9 @@ h1{
 # --------------------------------------------------
 
 # Imagen representativa del SARS-CoV-2 en proporción 16:9
-url_banner = st.image("SARS-CoV-2.png", use_container_width=True)
 
 st.image(
-    url_banner,
+    "SARS-CoV-2.png",
     caption="Banner: Ilustración del SARS-CoV-2",
     use_container_width=True
 )
