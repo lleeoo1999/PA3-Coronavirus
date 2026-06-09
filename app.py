@@ -44,7 +44,7 @@ h1{
 # --------------------------------------------------
 
 # Imagen representativa del SARS-CoV-2 en proporción 16:9
-url_banner = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_scanning_electron_microscope_image.jpg/1024px-SARS-CoV-2_scanning_electron_microscope_image.jpg"
+url_banner = st.image("SARS-CoV-2.png", use_container_width=True)
 
 st.image(
     url_banner,
