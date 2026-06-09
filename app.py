@@ -40,6 +40,19 @@ h1{
 """, unsafe_allow_html=True)
 
 # --------------------------------------------------
+# BANNER PRINCIPAL (16:9)
+# --------------------------------------------------
+
+# Imagen representativa del SARS-CoV-2 en proporción 16:9
+url_banner = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_scanning_electron_microscope_image.jpg/1024px-SARS-CoV-2_scanning_electron_microscope_image.jpg"
+
+st.image(
+    url_banner,
+    caption="Banner: Ilustración del SARS-CoV-2",
+    use_container_width=True
+)
+
+# --------------------------------------------------
 # CARGA DE DATOS
 # --------------------------------------------------
 
