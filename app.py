@@ -65,7 +65,7 @@ El virus **SARS-CoV-2** (Severe Acute Respiratory Syndrome Coronavirus 2) es el 
 """)
 
 # URL base limpia de JAMA para evitar problemas de expiración de tokens (Key-Pair-Id)
-url_imagen_jama = "https://cdn.jamanetwork.com/ama/content_public/journal/jama/938540/jrv200009f1_1597950376.70103.png"
+url_imagen_jama = "https://cdn.jamanetwork.com/ama/content_public/journal/jama/938540/jrv200009f1_1597950376.70103.png?Expires=1783981858&Signature=A3B6u~rtPpwX5ZvHLHnr3Xp-fAzXyLqBIlyttZ0RnSaYGe-3EECA-5f3GewAsf8VG7rP~5FzLVckjHaPfymmm-Zn~FRyUzjZ9yB~0Np8PDW10sk1gpe~kmqFFoBA-h2hue9iITgW0px34~AR5yrUo5ew0CpQPdileUKmUGX-X9A4gNe32rVwP2CbGmjrMf6yJNPOwrnjEQ81juGMyUQAEndeuJKhoA30-4d0qaQCDcthjQ8E0dY9~Mz21m3ZZ-jGkl7YOsSfhTZEe~6jBkBpyZWDqUrzSrxIgirBrE9TvEH~dUtgyFmSkpEtLE9l6itCdwmVBEwWPsYKZa7xxrvkAg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA"
 
 st.image(
     url_imagen_jama, 
